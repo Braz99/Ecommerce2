@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Home_main(){
+export default function HomeMain(){
     return(
         <main id='container'>
 

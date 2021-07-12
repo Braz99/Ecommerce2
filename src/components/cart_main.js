@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Cart_main(){
+export default function CartMain(){
     return(
         <main id='container'>
 
