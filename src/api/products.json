@@ -1,0 +1,62 @@
+[   {
+    "id": 0,
+    "name": "Armário",
+    "price": 380.00,
+    "image": ""
+  },
+    {
+      "id": 1,
+      "name": "Cadeira",
+      "price": 37.00,
+      "score": 100,
+      "image": ""
+    },
+    {
+      "id": 2,
+      "name": "Mesa",
+      "price": 50.00,
+      "image": ""
+    },
+    {
+      "id": 3,
+      "name": "Conjunto de cadeiras",
+      "price": 130.00,
+      "image": ""
+    },
+    {
+      "id": 4,
+      "name": "Cama",
+      "price": 250.99,
+      "image": ""
+    },
+    {
+      "id": 5,
+      "name": "Guarda-roupa",
+      "price": 369.99,
+      "image": ""
+    },
+    {
+      "id": 6,
+      "name": "Geladeira",
+      "price": 871.94,
+      "image": ""
+    },
+    {
+      "id": 7,
+      "name": "Televisão",
+      "price": 1280.00,
+      "image": ""
+    },
+    {
+      "id": 8,
+      "name": "Mesa de madeira",
+      "price": 100.00,
+      "image": ""
+    },
+    {
+      "id": 9,
+      "name": "Sofá",
+      "price": 705.80,
+      "image": ""
+    }
+  ]
