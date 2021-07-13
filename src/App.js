@@ -1,7 +1,11 @@
+import { CartProvider } from "./provider/cart";
 import Routes from "./routes";
 
 function App() {
-	return <Routes />;
+	return (
+	<CartProvider>
+		<Routes />
+	</CartProvider>);
 }
 
 export default App;
