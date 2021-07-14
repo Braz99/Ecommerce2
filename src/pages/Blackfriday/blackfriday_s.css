@@ -1,0 +1,112 @@
+#container_friday {
+	background-color: #080a5e;
+	height: 100vh;
+	width: 100%;
+	padding: 50px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	gap: 50px;
+}
+
+#title_promo {
+	width: 100%;
+	font-size: 60px;
+	user-select: none;
+    color: #ffff;
+    text-align: center;
+}
+
+#title_marine {
+	background-color: #ffff;
+	color: rgba(8, 10, 94);
+}
+
+#title_marine:hover {
+	color: #ffff;
+	background-color: #fa255e;
+}
+
+#text {
+	font-size: 40px;
+	user-select: none;
+    color: #ffff;
+    align-items: justify;
+}
+
+#form_email {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+    min-width: 300px;
+    flex-wrap: wrap;
+
+}
+
+#form_email input {
+	width: 40%;
+	padding: 10px 20px;
+	font-size: 25px;
+    min-width: 300px;
+	color: #fa255e;
+}
+
+#form_email button {
+	color: white;
+	background-color: #349e97;
+	border: none;
+	width: 20%;
+    min-width: 300px;
+    padding: 10px;
+	font-size: 25px;
+	cursor: pointer;
+    transition: 0.5s;
+}
+
+#promotion {
+	color: #fa255e;
+}
+
+#home_button{
+    background-color: #349e97;
+    color: white;
+    width: 50%;
+    min-width: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#form_email button:hover, #home_button:hover {
+    background-color: #21d9cc;
+}
+
+
+@media (max-width: 750px){
+    #container_friday{
+        gap: 30px;
+    }
+    #title_promo {
+        font-size: 30px;
+    }
+    #text {
+        font-size: 30px;
+    }
+
+    #form_email button{
+        margin-top: 10px;
+    }
+
+    
+}
+
+@media (max-height: 600px){
+    #container_friday{
+        height: 800px;
+    }
+}
+
