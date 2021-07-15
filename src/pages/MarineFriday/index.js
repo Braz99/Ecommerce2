@@ -1,8 +1,8 @@
 import React from "react";
-import "./blackfriday_s.css";
+import "./marinefriday_s.css";
 import { useHistory } from "react-router";
 
-export default function Blackfriday() {
+export default function MarineFriday() {
 	let history = useHistory();
 	return (
 		<main id="container_friday">

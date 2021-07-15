@@ -1,6 +1,6 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Blackfriday from "./pages/Blackfriday";
+import MarineFriday from "./pages/MarineFriday";
 import Cart from "./pages/Cart";
 
 export default function Routes() {
@@ -10,8 +10,8 @@ export default function Routes() {
 				<Route path="/" exact>
 					<Home />
 				</Route>
-				<Route path="/blackfriday">
-					<Blackfriday />
+				<Route path="/marinefriday">
+					<MarineFriday />
 				</Route>
 				<Route path="/">
 					<Cart />
