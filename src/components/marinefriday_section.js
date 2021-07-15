@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './styles/section_friday_s.css'
 
-export default function BlackFriday(){
+export default function MarineFriday(){
     let history = useHistory()
 
     function handleDirection(){

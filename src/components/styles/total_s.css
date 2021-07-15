@@ -1,0 +1,55 @@
+#total_area {
+    position: fixed;
+    bottom: 0px;
+    background-color: #080a5e;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#total_area h2 {
+    width: 50%;
+    font-size: 25px;
+    line-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#total_button {
+    background-color: #349e97;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#total_button:hover {
+    background-color: #21d9cc;
+}
+
+#total_price {
+    color: #fa255e;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 750px){
+    #total_area h2 {
+        font-size: 20px;
+        width: 100%;
+        line-height: normal;
+    }
+    #total_price {
+        text-align: center;
+        
+    }
+    #total_button {
+        font-size: 20px;
+    }
+}
