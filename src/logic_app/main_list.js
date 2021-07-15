@@ -1,17 +1,7 @@
+import handleBuy from "./add_item";
+
 let i = 0;
 let data = require("../api/products.json");
-
-function handleBuy(cart, name, price, image) {
-	if (cart.find((objeto) => name === objeto.name)) {
-		let item = cart.find((objeto) => (name === objeto.name ? objeto : ""));
-
-		item.qtd += 1;
-
-		item.price += item.price / (item.qtd - 1);
-	} else {
-		cart.push({ name: name, price: price, qtd: 1, image: image });
-	}
-}
 
 export default function generateMainList(cart) {
 	let list = document.getElementById("list_home");
