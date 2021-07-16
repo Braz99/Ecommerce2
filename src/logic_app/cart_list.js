@@ -3,6 +3,8 @@ import handleRemove from "./remove_item";
 let id = 0;
 
 export function generateList(cart, list_cart) {
+	let total_p = document.getElementById("total_price");
+	let total = 0
 	cart.forEach((item) => {
 		if (item.qtd > 0) {
 			let item_list = document.createElement("li");
@@ -33,6 +35,9 @@ export function generateList(cart, list_cart) {
 			item_list.appendChild(item_button);
 
 			list_cart.appendChild(item_list);
+			total += item.price;
 		}
+
+		total_p.innerText = 'R$ ' + parseFloat(total).toFixed(2).replace('.', ',')
 	});
 }

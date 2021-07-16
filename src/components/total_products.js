@@ -1,14 +1,15 @@
-import React from 'react';
-import './styles/total_s.css'
+import React from "react";
 
-export default function Total(){
-    return(
-        <div id='total_area'>
+import "./styles/total_s.css";
 
-            <h2>O total dos produtos foi: <span id='total_price'>R$ 3909997,00</span> </h2>
-            
-            <button id='total_button'>Finalizar a compra</button>
+export default function Total() {
+	return (
+		<div id="total_area">
+			<h2>
+				O total dos produtos foi: <span id="total_price">R$ 0,00</span>
+			</h2>
 
-        </div>
-    )
+			<button id="total_button">Finalizar a compra</button>
+		</div>
+	);
 }

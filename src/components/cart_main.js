@@ -5,12 +5,10 @@ import { generateList } from "../logic_app/cart_list";
 
 export default function CartMain() {
 	let { cart } = useCart();
-	cart = cart[0];
-    
-	
+
 	useEffect(() => {
 		let list_cart = document.getElementById("list_cart");
-		generateList(cart, list_cart)
+		generateList(cart, list_cart);
 	});
 
 	return (

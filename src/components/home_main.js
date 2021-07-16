@@ -5,7 +5,6 @@ import "./styles/home_main_s.css";
 
 export default function HomeMain() {
 	let { cart } = useCart();
-	cart = cart[0];
 
 	useEffect(() => {
 		generateMainList(cart);
