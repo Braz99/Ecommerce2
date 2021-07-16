@@ -41,6 +41,8 @@
 	justify-content: center;
     min-width: 300px;
     flex-wrap: wrap;
+    border: none;
+    box-shadow: none;
 
 }
 
@@ -53,8 +55,8 @@
 }
 
 #form_email button {
-	color: white;
 	background-color: #349e97;
+    color: white;
 	border: none;
 	width: 20%;
     min-width: 300px;
@@ -62,6 +64,7 @@
 	font-size: 25px;
 	cursor: pointer;
     transition: 0.5s;
+    border-radius: 5px;
 }
 
 #promotion {
@@ -79,6 +82,7 @@
     border: none;
     cursor: pointer;
     transition: 0.5s;
+    border-radius: 5px;
 }
 
 #form_email button:hover, #home_button:hover {
