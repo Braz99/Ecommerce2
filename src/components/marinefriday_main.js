@@ -1,23 +1,37 @@
 import React, { useState } from "react";
-import "./styles/marinefriday_s.css";
-import { useHistory } from "react-router";
 
+import { useHistory } from "react-router";
+import { toast } from "react-toastify";
+
+import "./styles/marinefriday_s.css";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function MarineFridayMain() {
 	let history = useHistory();
-	let [email, setEmail] = useState('')
+	let [email, setEmail] = useState("");
 
 	const handleEmailChange = (event) => {
-		setEmail(event.target.value)
-	}
+		setEmail(event.target.value);
+	};
 
 	const handleSubmit = (event) => {
-		event.preventDefault()
+		event.preventDefault();
+		if (email !== "") {
+			toast.clearWaitingQueue();
+			toast.success(`${email}, cadastrado com sucesso!`, {
+				position: "top-center",
+				hideProgressBar: true,
+			});
+		} else {
+			toast.clearWaitingQueue();
+			toast.error(`Cadastre um email!`, {
+				position: "top-center",
+				hideProgressBar: true,
+			});
+		}
 
-		
-	}
-
-	
+		setEmail('')
+	};
 
 	return (
 		<main id="container_friday">
@@ -32,7 +46,12 @@ export default function MarineFridayMain() {
 			</p>
 
 			<form id="form_email" onSubmit={handleSubmit}>
-				<input type="email" placeholder="Email" inputMode='email'value={email} onChange={handleEmailChange}></input>
+				<input
+					type="email"
+					placeholder="Email"
+					inputMode="email"
+					value={email}
+					onChange={handleEmailChange}></input>
 				<button id="email_button">Cadastrar</button>
 			</form>
 
