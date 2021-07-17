@@ -4,7 +4,7 @@ let id = 0;
 
 export function generateList(cart, list_cart) {
 	let total_p = document.getElementById("total_price");
-	let total = 0
+	let total = 0;
 	cart.forEach((item) => {
 		if (item.qtd > 0) {
 			let item_list = document.createElement("li");
@@ -38,6 +38,6 @@ export function generateList(cart, list_cart) {
 			total += item.price;
 		}
 
-		total_p.innerText = 'R$ ' + parseFloat(total).toFixed(2).replace('.', ',')
+		total_p.innerText = "R$ " + parseFloat(total).toFixed(2).replace(".", ",");
 	});
 }

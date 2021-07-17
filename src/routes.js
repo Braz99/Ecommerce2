@@ -2,6 +2,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import MarineFriday from "./pages/MarineFriday";
 import Cart from "./pages/Cart";
+import EndStop from "./pages/EndStop";
 
 export default function Routes() {
 	return (
@@ -13,8 +14,11 @@ export default function Routes() {
 				<Route path="/marinefriday">
 					<MarineFriday />
 				</Route>
-				<Route path="/">
+				<Route path="/cart">
 					<Cart />
+				</Route>
+				<Route path='/endstop'>
+					<EndStop />
 				</Route>
 			</Switch>
 		</BrowserRouter>
