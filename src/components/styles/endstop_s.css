@@ -1,0 +1,36 @@
+#container_endstop {
+    width: 80%;
+    margin: 10px auto;
+    background-color: #080a5e;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+#container_endstop p {
+    font-size: 25px;
+}
+
+#endstop_title {
+    font-size: 30px;
+    color: #fa255e;
+}
+
+#container_endstop button{
+    height: 30px;
+	width: 40%;
+	font-size: 22px;
+	padding: 10px;
+	box-sizing: content-box;
+	border-radius: 5px;
+	border: none;
+	background-color: #349e97;
+	color: #fff;
+	margin: 10px;
+	cursor: pointer;
+}
+
+#container_endstop button:hover {
+    background-color: #21d9cc;
+}

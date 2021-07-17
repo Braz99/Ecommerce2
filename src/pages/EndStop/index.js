@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import '../../components/styles/endstop_s.css'
 
 export default function EndStop() {
     let history = useHistory()
@@ -9,7 +10,7 @@ export default function EndStop() {
     }
 	return (
 		<main id="container_endstop">
-			<h2>Compra Finalizada</h2>
+			<h2 id='endstop_title'>Compra Finalizada</h2>
 			<p>Muito obrigado pelo apoio, tua compra chegará em breve! </p>
 			<button onClick={handleHome}>Início</button>
 		</main>
