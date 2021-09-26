@@ -16,7 +16,7 @@ E também de um editor de código, de preferência o [VSCode](https://code.visua
 
 ### Passos
 
-- Primeiro clone o projeto, use o terminal git bash, com o comando <code>git clone https://github.com/Braz99/Ecommerce2</code>
+- Primeiro clone o projeto, use o terminal git bash, com o comando <code>git clone https://github.com/Braz99/Ecommerce2.git</code>
 - Depois abra a pasta no terminal usando o comando <code> cd caminho da pasta</code>
 - Com a pasta selecionada é hora de instalar todas as dependências do projeto com o comando <code>npm install</code>
 - Para executar a aplicação em modo de desenvolvimento use o comando <code>npm start</code>
