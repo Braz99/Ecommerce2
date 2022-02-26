@@ -4,15 +4,15 @@ import { useCart } from "../provider/cart";
 import "./styles/home_main_s.css";
 
 export default function HomeMain() {
-	let { cart } = useCart();
+  let { cart } = useCart();
 
-	useEffect(() => {
-		generateMainList(cart);
-	});
+  useEffect(() => {
+    generateMainList(cart);
+  });
 
-	return (
-		<main id="container">
-			<ul id="list_home"></ul>
-		</main>
-	);
+  return (
+    <main id="container">
+      <ul id="list_home"></ul>
+    </main>
+  );
 }

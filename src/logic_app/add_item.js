@@ -11,6 +11,7 @@ export default function handleBuy(cart, name, price, image) {
 			item.price = price
 		}else{
 		item.price += item.price / (item.qtd - 1);}
+		
 	} else {
 		cart.push({ name: name, price: price, qtd: 1, image: image });
 	}
