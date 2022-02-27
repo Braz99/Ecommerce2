@@ -1,14 +1,14 @@
 import React from "react";
-import MarineFriday from "../../components/marinefriday_section";
+import MarineFriday from "../../components/MarineFridaySection";
 import Header from "../../components/header";
-import HomeMain from "../../components/HomeMain";
+import MainHome from "../../components/MainHome";
 
 export default function Home() {
   return (
     <>
       <Header />
       <MarineFriday />
-      <HomeMain />
+      <MainHome />
     </>
   );
 }

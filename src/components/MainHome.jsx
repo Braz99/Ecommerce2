@@ -1,5 +1,3 @@
-import React from "react";
-
 import MainItem from "./MainItem";
 import "./styles/home_main_s.css";
 

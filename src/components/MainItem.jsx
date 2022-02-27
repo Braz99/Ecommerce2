@@ -1,5 +1,4 @@
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { useCart } from "../provider/cart";
 
 export default function MainItem({ children }) {
