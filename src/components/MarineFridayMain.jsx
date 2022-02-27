@@ -1,34 +1,10 @@
-import { useState } from "react";
 import { useHistory } from "react-router";
-import { toast } from "react-toastify";
+import useMarineActions from "../hooks/useMarineActions";
 import "./styles/marinefriday_s.css";
 
 export default function MarineFridayMain() {
   let history = useHistory();
-  let [email, setEmail] = useState("");
-
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (email !== "") {
-      toast.clearWaitingQueue();
-      toast.success(`${email}, cadastrado com sucesso!`, {
-        position: "top-center",
-        hideProgressBar: true,
-      });
-    } else {
-      toast.clearWaitingQueue();
-      toast.error(`Cadastre um email!`, {
-        position: "top-center",
-        hideProgressBar: true,
-      });
-    }
-
-    setEmail("");
-  };
+  let { handleEmailChange, handleSubmit, email } = useMarineActions();
 
   return (
     <main id="container_friday">

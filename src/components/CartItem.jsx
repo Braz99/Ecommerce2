@@ -1,52 +1,7 @@
-import { toast } from "react-toastify";
-import { useCart } from "../provider/cart";
+import useCartActions from "../hooks/useCartActions";
 
 export default function CartItem({ children, remove }) {
-  let { cart, setCart } = useCart();
-
-  function handleDecrease(name) {
-    let data = cart.find((item) => item.name === name);
-
-    if (data.qtd > 0) {
-      data.qtd -= 1;
-      data.price -= data.price / (data.qtd + 1);
-
-      setCart([...cart]);
-    }
-
-    if (data.qtd === 0) {
-      let newCart = cart.filter((item) => item.name !== name)
-      setCart([...newCart]);
-
-      toast.error(`${name} removido(a) do carrinho`, {
-        autoClose: 2500,
-        position: "top-center",
-        hideProgressBar: true,
-      });
-    }
-  }
-
-  function handleIncrease(name) {
-    let found = cart.find((item) => name === item.name);
-    let priceUnit = found.price / found.qtd;
-
-    found.qtd += 1;
-    found.price += priceUnit;
-
-    setCart([...cart]);
-  }
-
-  function handleDelete(name) {
-    let newCart = cart.filter((item) => name !== item.name);
-
-    setCart([...newCart]);
-
-    toast.error(`${name} removido(a) do carrinho`, {
-      autoClose: 2500,
-      position: "top-center",
-      hideProgressBar: true,
-    });
-  }
+  let { handleIncrease, handleDecrease, handleDelete } = useCartActions();
 
   return (
     <li>
