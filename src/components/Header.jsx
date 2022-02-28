@@ -4,12 +4,12 @@ import "../styles/components_styles/header_s.css";
 export default function Header() {
   return (
     <header>
-      <span id="logo">
+      <span className="logo">
         <Link to="/">Marine</Link>
       </span>
 
-      <nav id="navbar">
-        <ul id="menu">
+      <nav className="navbar">
+        <ul className="menu">
           <li>
             <Link to="/">Início</Link>
           </li>
