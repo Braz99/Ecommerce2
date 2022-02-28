@@ -1,5 +1,5 @@
 import { useHistory } from "react-router-dom";
-import "../../components/styles/endstop_s.css";
+import "../../styles/components_styles/endstop_s.css";
 
 export default function EndStop() {
   let history = useHistory();

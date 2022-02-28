@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useCart } from "../provider/cart";
-import "./styles/total_s.css";
+import "../styles/components_styles/total_s.css";
 
 export default function TotalCart() {
   let history = useHistory();

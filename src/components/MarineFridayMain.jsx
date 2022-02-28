@@ -1,6 +1,6 @@
 import { useHistory } from "react-router";
 import useMarineActions from "../hooks/useMarineActions";
-import "./styles/marinefriday_s.css";
+import "../styles/components_styles/marinefriday_s.css";
 
 export default function MarineFridayMain() {
   let history = useHistory();

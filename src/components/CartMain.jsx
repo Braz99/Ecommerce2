@@ -1,6 +1,7 @@
 import { useCart } from "../provider/cart";
 import CartItem from "./CartItem";
-import "./styles/cart_main_s.css";
+import "../styles/components_styles/cart_main_s.css";
+
 
 export default function CartMain() {
   let { cart } = useCart();

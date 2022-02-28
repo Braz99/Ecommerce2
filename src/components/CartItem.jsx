@@ -1,6 +1,6 @@
 import useCartActions from "../hooks/useCartActions";
 
-export default function CartItem({ children, remove }) {
+export default function CartItem({ children }) {
   let { handleIncrease, handleDecrease, handleDelete } = useCartActions();
 
   return (

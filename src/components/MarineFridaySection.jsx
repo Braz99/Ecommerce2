@@ -1,5 +1,5 @@
 import { useHistory } from "react-router-dom";
-import "./styles/section_friday_s.css";
+import "../styles/components_styles/section_friday_s.css";
 
 export default function MarineFriday() {
   let history = useHistory();

@@ -1,5 +1,5 @@
 import MainItem from "./MainItem";
-import "./styles/home_main_s.css";
+import "../styles/components_styles/home_main_s.css";
 
 export default function HomeMain() {
   let data = require("../api/products.json");
