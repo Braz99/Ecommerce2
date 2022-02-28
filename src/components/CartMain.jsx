@@ -7,8 +7,8 @@ export default function CartMain() {
   let { cart } = useCart();
 
   return (
-    <main id="container_cart">
-      <ul id="list_cart">
+    <main className="container_cart">
+      <ul className="list_cart">
         {cart.map((item, i) => (
           <CartItem key={i}>{item}</CartItem>
         ))}

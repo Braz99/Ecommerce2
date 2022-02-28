@@ -1,11 +1,11 @@
-#container_cart ul {
+.container_cart ul {
   display: flex;
   padding: 20px;
   flex-wrap: wrap;
   margin-bottom: 80px;
 }
 
-#container_cart ul li {
+.container_cart ul li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -16,16 +16,27 @@
   border-left: solid 5px #080a5e;
 }
 
-#container_cart ul li h2 {
-  width: 20%;
-}
-
-#container_cart ul li h3 {
-  width: 15%;
+.name,
+.price {
   min-width: 100px;
+  text-align: center;
+  width: 15%;
 }
 
-#container_cart ul li img {
+.quantity_area {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.quantity {
+  width: 15%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.container_cart ul li img {
   width: 100px;
   height: 100px;
 }
@@ -33,13 +44,13 @@
 .buttons_cart {
   display: flex;
   justify-content: space-around;
-  width: 40%;
+  width: 15%;
 }
 
 .button_cart__decrease {
   height: 30px;
-  width: 20%;
-  font-size: 22px;
+  width: 30%;
+  font-size: 20px;
   padding: 10px;
   box-sizing: content-box;
   border-radius: 5px;
@@ -55,8 +66,8 @@
 
 .button_cart__increase {
   height: 30px;
-  width: 20%;
-  font-size: 22px;
+  width: 30%;
+  font-size: 20px;
   padding: 10px;
   box-sizing: content-box;
   border-radius: 5px;
@@ -72,7 +83,7 @@
 
 .button_cart__delete {
   height: 30px;
-  width: 20%;
+  width: 100%;
   font-size: 20px;
   padding: 10px;
   box-sizing: content-box;
@@ -88,31 +99,50 @@
 }
 
 @media (max-width: 750px) {
-  #container_cart ul {
+  .container_cart ul {
     margin-bottom: 130px;
   }
 
-  #container_cart img {
+  .container_cart img {
     width: 50px;
     height: 50px;
   }
 
-  #container_cart li {
+  .container_cart li {
     flex-direction: column;
     padding: 10px;
     justify-content: center;
   }
 
-  #container_cart ul li h2,
-  h3 {
+  .name,
+  .price {
     margin-top: 10px;
     width: 100%;
     text-align: center;
   }
 
+  .quantity_area {
+    width: 80%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .quantity {
+    width: 25%;
+  }
+
+  .button_cart__increase,
+  .button_cart__decrease {
+    width: 25%;
+  }
+
   .buttons_cart {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
+  }
+
+  .button_cart__delete {
+    width: 30%;
   }
 
   .button_cart__increase,
