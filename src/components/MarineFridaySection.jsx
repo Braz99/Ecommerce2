@@ -1,16 +1,16 @@
-import { useHistory } from "react-router-dom";
+import useMarineActions from "../hooks/useMarineActions";
 import "../styles/components_styles/section_friday_s.css";
 
 export default function MarineFriday() {
-  let history = useHistory();
+  let { handleDirection } = useMarineActions();
 
-  function handleDirection() {
-    history.push("/marinefriday");
-  }
   return (
     <section id="section_marinefriday">
       <p>Não perca a grande Marine Friday, cadastre o teu mail! </p>
-      <button id="section_button" onClick={handleDirection}>
+      <button
+        id="section_button"
+        onClick={() => handleDirection("marinefriday")}
+      >
         Cadastrar
       </button>
     </section>

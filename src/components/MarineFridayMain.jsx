@@ -1,10 +1,9 @@
-import { useHistory } from "react-router";
 import useMarineActions from "../hooks/useMarineActions";
 import "../styles/components_styles/marinefriday_s.css";
 
 export default function MarineFridayMain() {
-  let history = useHistory();
-  let { handleEmailChange, handleSubmit, email } = useMarineActions();
+  let { handleDirection, handleEmailChange, handleSubmit, email } =
+    useMarineActions();
 
   return (
     <main id="container_friday">
@@ -29,12 +28,7 @@ export default function MarineFridayMain() {
         <button id="email_button">Cadastrar</button>
       </form>
 
-      <button
-        id="home_button"
-        onClick={() => {
-          history.push("./");
-        }}
-      >
+      <button id="home_button" onClick={() => handleDirection("")}>
         Ir para o site
       </button>
     </main>

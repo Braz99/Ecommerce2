@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { toast } from "react-toastify";
 
 export default function useMarineActions() {
   let [email, setEmail] = useState("");
+  let history = useHistory();
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -27,5 +29,15 @@ export default function useMarineActions() {
     setEmail("");
   };
 
-  return { handleSubmit, handleEmailChange, email };
+  function handleDirection(place) {
+    let list = ["index", "home"];
+
+    if (list.includes(place)) {
+      place = "";
+    }
+
+    history.push(`/${place.replace("./", "")}`);
+  }
+
+  return { handleDirection, handleSubmit, handleEmailChange, email };
 }
