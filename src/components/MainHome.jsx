@@ -5,8 +5,8 @@ export default function HomeMain() {
   let data = require("../api/products.json");
 
   return (
-    <main id="container">
-      <ul id="list_home">
+    <main className="container">
+      <ul className="list_home">
         {data.map((item, i) => (
           <MainItem key={i}>{item}</MainItem>
         ))}

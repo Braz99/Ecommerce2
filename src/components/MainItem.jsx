@@ -5,10 +5,10 @@ export default function MainItem({ children }) {
 
   return (
     <li>
-      <h2>{children.name}</h2>
-      <img src={`assets/${children.image}`} alt={children.name} />
-      <h3>R$ {children.price.toFixed(2).replace(".", ",")}</h3>
-      <button onClick={() => handleBuy(children)}>Buy</button>
+      <h2 className='name_home'>{children.name}</h2>
+      <img className='img_home' src={`assets/${children.image}`} alt={children.name} />
+      <h3 className="price_home">R$ {children.price.toFixed(2).replace(".", ",")}</h3>
+      <button className="button_buy" onClick={() => handleBuy(children)}>Comprar</button>
     </li>
   );
 }

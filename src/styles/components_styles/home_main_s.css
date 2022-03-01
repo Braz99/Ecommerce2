@@ -1,71 +1,86 @@
-#container ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	padding: 20px;
+.list_home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
 }
 
-#container ul li {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	background-color: #fff;
-	margin: 10px 0px 10px 10px;
-	width: 30%;
-	min-width: 200px;
-	text-align: center;
-	min-height: 415px;
+.list_home li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fff;
+  margin: 10px 15px 30px 0px;
+  width: 30%;
+  max-width: 350px;
+  height: 415px;
+  border-radius: 10px;
 }
 
-#container ul li:hover {
-	box-shadow: 5px 10px 60px;
+.list_home li:hover {
+  box-shadow: 0px 5px 15px;
+  transform: translate3D(0px, -20px, 0px);
+  transition: 0.3s;
 }
 
-#container ul li h2 {
-	width: 100%;
-	background-color: #fa255e;
-	color: #fff;
-	height: 80px;
-	line-height: 80px;
-	text-align: center;
+.name_home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fa255e;
+  color: #fff;
+  height: 70px;
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
 }
 
-#container ul li h3 {
-	width: 100%;
-	color: #080a5e;
+.price_home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  color: #080a5e;
 }
 
-#container ul li img {
-	margin: 20px;
-	width: 70%;
-	height: 50%;
+.img_home {
+  margin: 20px;
+  width: 70%;
+  height: 50%;
 }
 
-#container ul li button {
-	height: 30px;
-	width: 70%;
-	font-size: 22px;
-	padding: 10px;
-	box-sizing: content-box;
-	border-radius: 5px;
-	border: none;
-	background-color: #349e97;
-	color: #fff;
-	margin: 10px;
-	cursor: pointer;
+.button_buy {
+  height: 30px;
+  width: 70%;
+  font-size: 22px;
+  padding: 10px;
+  box-sizing: content-box;
+  border-radius: 5px;
+  border: none;
+  background-color: #349e97;
+  color: #fff;
+  margin: 10px;
+  cursor: pointer;
 }
 
-#container ul li button:hover {
-	background-color: #21d9cc;
+.button_buy:hover {
+  background-color: #21d9cc;
 }
-
 
 @media (max-width: 750px) {
-	#container ul li h2 {
-		line-height: 40px;
-	}
-    #container ul li img {
-        width: 55%;
-        height: 30%;
-    }
+  .list_home li {
+    min-width: 250px;
+  }
+
+  .img_home {
+    width: 55%;
+    height: 30%;
+  }
+}
+
+@media (max-width: 450px) {
+  .list_home li {
+    min-width: 200px;
+  }
 }
