@@ -4,17 +4,11 @@
   background-color: #080a5e;
   color: #fff;
   width: 100%;
-  padding: 10px;
+  padding: 10px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.total_div {
-  display: flex;
-  justify-content: center;
-  width: 100%;
 }
 
 .total_area h2 {
@@ -52,15 +46,25 @@
 @media (max-width: 750px) {
   .total_area h2 {
     font-size: 20px;
-    line-height: normal;
   }
 
   .total_price {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .total_button {
-      font-size: 20px;
-      width: 50%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .total_price {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .total_button {
+    font-size: 20px;
+    width: 70%;
   }
 }
