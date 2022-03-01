@@ -5,10 +5,10 @@ export default function MarineFriday() {
   let { handleDirection } = useMarineActions();
 
   return (
-    <section id="section_marinefriday">
-      <p>Não perca a grande Marine Friday, cadastre o teu mail! </p>
+    <section className="section_marinefriday">
+      <p>Não perca a grande Marine Friday, cadastre o teu email! </p>
       <button
-        id="section_button"
+        className="section_button"
         onClick={() => handleDirection("marinefriday")}
       >
         Cadastrar

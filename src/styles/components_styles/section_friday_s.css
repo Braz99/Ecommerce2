@@ -1,52 +1,61 @@
-#section_marinefriday {
-	background-color: #f2738f;
-	padding: 20px;
-	box-sizing: content-box;
-	color: white;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	gap: 10px;
+.section_marinefriday {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #f2738f;
+  color: white;
 }
 
-#section_marinefriday p {
-	text-align: center;
-	padding: 10px;
-	font-size: 25px;
-	width: 50%;
+.section_marinefriday p {
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+  width: 70%;
 }
 
-#section_button {
-	background-color: #349e97;
-	color: #fff;
-	padding: 10px;
-	width: 20%;
-	min-width: 280px;
-	font-size: 25px;
-	border-radius: 5px;
-	border: none;
-	cursor: pointer;
-	box-sizing: content-box;
+.section_button {
+  background-color: #349e97;
+  color: #fff;
+  padding: 10px;
+  width: 20%;
+  min-width: 150px;
+  max-height: 54px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
-#section_button:hover {
-	background-color: #21d9cc;
+.section_button:hover {
+  background-color: #21d9cc;
 }
 
+@media (max-width: 750px) {
+  .section_marinefriday {
+    justify-content: center;
+  }
 
-@media (max-width: 750px){
-    #section_marinefriday{
-        justify-content: center;
-        padding: 10px;
-    }
+  .section_marinefriday p {
+    font-size: 20px;
+    width: 100%;
+  }
 
-    #section_marinefriday p {
-        font-size: 20px;
-        padding: 0px;
-    }
+  .section_button {
+    font-size: 20px;
+  }
+}
 
-    #section_button {
-        font-size: 20px;
-        padding: 10px;
-    }
+@media (max-width: 450px) {
+  .section_marinefriday p {
+    font-size: 18px;
+  }
+
+  .section_button {
+    font-size: 18px;
+  }
 }
