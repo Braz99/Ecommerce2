@@ -1,9 +1,10 @@
-# Site simples que simula uma loja
+# Loja Marine
 #### Link do projeto: https://lojamarine.netlify.app/
 [![Netlify Status](https://api.netlify.com/api/v1/badges/45247886-24a7-480a-ac78-d92b37a41266/deploy-status)](https://lojamarine.netlify.app/)
 
 ## Sobre
-Este site foi feito com base no desafio do treinamento hiring coders, que é patrocinado pela VTEX. O desafio era criar só uma landing page, mas decidi ir um pouco além, replicando e ajustando o [projeto Ecommerce](https://github.com/Braz99/Ecommerce), utilizando o conceito de context api e a biblioteca [Totastify](https://github.com/fkhadra/react-toastify).
+Este site foi feito com base no desafio do treinamento hiring coders, que é patrocinado pela VTEX. O desafio era criar só uma landing page, mas decidi ir um pouco além, replicando e ajustando o [projeto Ecommerce](https://github.com/Braz99/Ecommerce), utilizando o conceito de context api e a biblioteca [Totastify](https://github.com/fkhadra/react-toastify). 
+
 
 ## Instalação
 Você vai precisar ter instalado em sua máquina:
@@ -25,11 +26,11 @@ E também de um editor de código, de preferência o [VSCode](https://code.visua
  
  ## Estruturação do projeto
  
- Este projeto tem 4 páginas, encontradas na pasta src/pages, que são as seguintes: 
+ Este projeto tem 4 páginas, encontradas na pasta __src/pages__, que são as seguintes: 
  
- - Home: Com os componentes Header, MarineFriday, e HomeMain; 
- - MarineFriday: Com o componente MarineFridayMain;
- - Cart: Com os componentes Header, CartMain e Total;
+ - Home com os componentes: Header, MarineFriday, e MainHome; 
+ - MarineFriday com o componente: MarineFridayMain;
+ - Cart com os componentes: Header, CartMain e TotalCart;
  - EndStop: Sem componentes, por ser apenas uma mensagem ao cliente.
 
 ### Informações 
@@ -37,8 +38,11 @@ E também de um editor de código, de preferência o [VSCode](https://code.visua
 - Na pasta __src/api__ está a database do projeto, __products.json__, que nada mais é que a lista de produtos;
 - As imagens se encontram na pasta __public/assets__
 - Todos os componentes se encontram na pasta __src/components__;
-- Toda a lógica do projeto se encontra na pasta __src/logic_app__ e em alguns componentes, já mencionados;
-- Todo o estilo do projeto se encontra na pasta __src/components/styles__, com exceção do __style_global__(apenas margin e padding zerados).
+- Toda a lógica do projeto foi isolada em hooks personalizados, e se encontra na pasta __src/hooks__ ;
+- Dentro de __provider/cart.js__ está a lógica da ContextAPI, fornecendo para a aplicação os dados do cart e o setCart;
+- Todo o estilo do projeto se encontra na pasta __src/styles__, estando os estilos dos componentes na pasta __components__.
+
+
 
 ## Licença 
 License MIT
