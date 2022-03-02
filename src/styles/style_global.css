@@ -23,3 +23,11 @@ a {
   background-color: #080a5e;
   border-radius: 5px;
 }
+
+.Toastify__toast--success {
+  background: #349e97;
+}
+
+.Toastify__toast--error {
+  background: #d1172a;
+}

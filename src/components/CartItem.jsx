@@ -24,7 +24,7 @@ export default function CartItem({ children }) {
           onClick={() => handleDecrease(children.name)}
           className="button_cart__decrease"
         >
-          Menos
+          Retirar
         </button>
       </div>
 

@@ -14,15 +14,10 @@ export default function useMarineActions() {
     event.preventDefault();
     if (email !== "") {
       toast.clearWaitingQueue();
-      toast.success(`${email}, cadastrado com sucesso!`, {
-        position: "top-center",
-        hideProgressBar: true,
-      });
+      toast.success(`${email}, cadastrado com sucesso!`);
     } else {
       toast.clearWaitingQueue();
       toast.error(`Cadastre um email!`, {
-        position: "top-center",
-        hideProgressBar: true,
         toastId: 10,
       });
     }

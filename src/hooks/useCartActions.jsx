@@ -30,8 +30,6 @@ export default function useCartActions() {
 
       toast.error(`${name} removido(a) do carrinho`, {
         autoClose: 2500,
-        position: "top-center",
-        hideProgressBar: true,
       });
     }
   }
@@ -43,8 +41,6 @@ export default function useCartActions() {
 
     toast.error(`${name} removido(a) do carrinho`, {
       autoClose: 2500,
-      position: "top-center",
-      hideProgressBar: true,
     });
   }
 

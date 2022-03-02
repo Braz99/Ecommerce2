@@ -25,7 +25,6 @@ export default function useTotalActions() {
     } else {
       toast.error("Compre algo primeiro!", {
         position: "top-center",
-        hideProgressBar: true,
         autoClose: 2500,
         toastId: 1,
       });

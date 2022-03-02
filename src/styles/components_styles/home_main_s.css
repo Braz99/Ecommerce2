@@ -19,7 +19,7 @@
 
 .list_home li:hover {
   box-shadow: 0px 5px 15px;
-  transform: translate3D(0px, -20px, 0px);
+  transform: translate(0px, -20px);
   transition: 0.3s;
 }
 

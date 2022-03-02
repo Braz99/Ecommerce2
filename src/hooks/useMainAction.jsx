@@ -21,8 +21,6 @@ export default function useMainAction() {
 
     toast.success(`${item.name} adicionado(a) ao carrinho!`, {
       autoClose: 3000,
-      position: "top-center",
-      hideProgressBar: true,
     });
   }
 

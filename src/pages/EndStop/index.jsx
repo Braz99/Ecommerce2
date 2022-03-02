@@ -1,17 +1,14 @@
-import { useHistory } from "react-router-dom";
+import useMarineActions from "../../hooks/useMarineActions";
 import "../../styles/components_styles/endstop_s.css";
 
 export default function EndStop() {
-  let history = useHistory();
-  function handleHome(event) {
-    event.preventDefault();
-    history.push("/");
-  }
+  let { handleDirection } = useMarineActions();
+
   return (
-    <main id="container_endstop">
-      <h2 id="endstop_title">Compra Finalizada</h2>
+    <main className="container_endstop">
+      <h2 className="endstop_title">Compra Finalizada</h2>
       <p>Muito obrigado pelo apoio, tua compra chegará em breve! </p>
-      <button onClick={handleHome}>Início</button>
+      <button onClick={() => handleDirection("")}>Início</button>
     </main>
   );
 }
