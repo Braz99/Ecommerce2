@@ -6,31 +6,36 @@ export default function MarineFridayMain() {
     useMarineActions();
 
   return (
-    <main id="container_friday">
-      <h1 id="title_promo">
-        <span id="title_marine">Marine</span> Friday = Promoções surpreendentes!
+    <main className="container_friday">
+      <h1 className="title_promo">
+        <span className="title_marine">Marine</span> Friday! Promoções
+        surpreendentes!
       </h1>
 
-      <p id="text">
+      <p className="text">
         Móveis e eletrodomésticos com até 50% de desconto. A{" "}
-        <span id="title_marine">Marine</span> Friday está chegando, não perca
-        nenhuma <span id="promotion">promoção</span>, cadastre já o teu email!
+        <span className="title_marine">Marine</span> Friday está chegando, não
+        perca nenhuma <span className="promotion">promoção</span>, cadastre já o
+        teu email!
       </p>
 
-      <form id="form_email" onSubmit={handleSubmit}>
+      <form className="form_email" onSubmit={handleSubmit}>
         <input
+          className="input_email"
           type="email"
           placeholder="Email"
           inputMode="email"
           value={email}
           onChange={handleEmailChange}
         ></input>
-        <button id="email_button">Cadastrar</button>
+        <button className="button_email">Cadastrar</button>
       </form>
 
-      <button id="home_button" onClick={() => handleDirection("")}>
-        Ir para o site
-      </button>
+      <div className="button_div_home">
+        <button className="button_to_home" onClick={() => handleDirection("")}>
+          Ir para o site
+        </button>
+      </div>
     </main>
   );
 }

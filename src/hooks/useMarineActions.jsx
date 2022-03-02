@@ -23,6 +23,7 @@ export default function useMarineActions() {
       toast.error(`Cadastre um email!`, {
         position: "top-center",
         hideProgressBar: true,
+        toastId: 10,
       });
     }
 
