@@ -1,5 +1,5 @@
 # Loja Marine
-#### Link do projeto: https://lojamarine.netlify.app/
+### Link do projeto: https://lojamarine.netlify.app/
 [![Netlify Status](https://api.netlify.com/api/v1/badges/45247886-24a7-480a-ac78-d92b37a41266/deploy-status)](https://lojamarine.netlify.app/)
 
 ## Sobre
@@ -24,7 +24,7 @@ E também de um editor de código, de preferência o [VSCode](https://code.visua
 
  O servidor inciará na porta:3000 - acesse http://localhost:3000
  
- ## Estruturação do projeto
+ ## Estrutura do projeto
  
  Este projeto tem 4 páginas, encontradas na pasta __src/pages__, que são as seguintes: 
  
@@ -40,7 +40,7 @@ E também de um editor de código, de preferência o [VSCode](https://code.visua
 - Todos os componentes se encontram na pasta __src/components__;
 - Toda a lógica do projeto foi isolada em hooks personalizados, e se encontra na pasta __src/hooks__ ;
 - Dentro de __provider/cart.js__ está a lógica da ContextAPI, fornecendo para a aplicação os dados do cart e o setCart;
-- Todo o estilo do projeto se encontra na pasta __src/styles__, estando os estilos dos componentes na pasta __components__.
+- Todo o estilo do projeto se encontra na pasta __src/styles__, estando os estilos dos componentes na pasta __components_styles__.
 
 
 
