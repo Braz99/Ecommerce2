@@ -13,7 +13,7 @@ ReactDOM.render(
       draggable={true}
       position="top-left"
       hideProgressBar={true}
-      style={{ width: "50%", textAlign: "center" }}
+      className="toast_s"
     />
   </React.StrictMode>,
   document.getElementById("root")

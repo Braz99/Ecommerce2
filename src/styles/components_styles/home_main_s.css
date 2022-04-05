@@ -1,26 +1,30 @@
+.container {
+  width: 100%;
+  margin: 10px 0px;
+}
+
 .list_home {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
   padding: 20px;
 }
 
-.list_home li {
+.item_home {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background-color: #fff;
-  margin: 10px 15px 30px 0px;
-  width: 30%;
-  max-width: 350px;
+  width: 100%;
   height: 415px;
   border-radius: 10px;
 }
 
-.list_home li:hover {
-  box-shadow: 0px 5px 15px;
+.item_home:hover {
+  box-shadow: 0px 5px 15px #c2c2c2;
   transform: translate(0px, -20px);
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .name_home {
@@ -68,9 +72,15 @@
   background-color: #21d9cc;
 }
 
+@media (min-width: 1250px) {
+  .list_home {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 @media (max-width: 750px) {
-  .list_home li {
-    min-width: 250px;
+  .list_home {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .img_home {
@@ -80,7 +90,14 @@
 }
 
 @media (max-width: 450px) {
-  .list_home li {
-    min-width: 200px;
+  .list_home {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px 50px;
+  }
+}
+
+@media (max-width: 300px) {
+  .list_home {
+    padding: 20px 40px;
   }
 }

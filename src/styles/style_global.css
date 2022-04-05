@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap");
 
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
 * {
   padding: 0px;
   margin: 0px;
   font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 a {
@@ -30,4 +38,16 @@ a {
 
 .Toastify__toast--error {
   background: #d1172a;
+}
+
+@media (max-width: 480px) {
+  .toast_s {
+    width: 70%;
+    font-size: 15px;
+  }
+
+  .Toastify__toast {
+    border-radius: 5px;
+    margin-top: 10px;
+  }
 }

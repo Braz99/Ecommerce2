@@ -8,7 +8,9 @@ export default function HomeMain() {
     <main className="container">
       <ul className="list_home">
         {data.map((item, i) => (
-          <MainItem key={i}>{item}</MainItem>
+          <MainItem key={i} className="item_home">
+            {item}
+          </MainItem>
         ))}
       </ul>
     </main>
